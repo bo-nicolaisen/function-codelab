@@ -20,9 +20,6 @@ function gatherInputData() {
 
     const myDanishAmount = document.getElementById('danishAmount').value;
 
-
-
-
     makeExchange(myEuroRate, myDollarRate, myDanishAmount);
 }
 // viser resultatet  (view code fra MVC)
