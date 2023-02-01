@@ -25,23 +25,27 @@ function gatherInputData() {
 
     makeExchange(myEuroRate, myDollarRate, myDanishAmount);
 }
-
-
-
-
-
-
 // viser resultatet  (view code fra MVC)
+
 function showResult(myEuroResult, myDollarResult, myDanishAmount) {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = myDanishAmount + ' danske kroner bliver til: ' + myEuroResult + ' euro og ' + myDollarResult + ' dollars';
 
 }
 
-/* skriv din kode herunder.
+// skriv din kode herunder.
 
 
+function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
+
+    let myDollars = calculateExchange(myDanishAmount, myDollarRate);
+    let myEuros = calculateExchange(myDanishAmount, myEuroRate);
+
+    showResult(myEuros, myDollars, myDanishAmount);
+}
 
 
-
+function calculateExchange (myDanishAmount, myRate) {
+    return myDanishAmount * myRate;
+}
 
