@@ -40,7 +40,6 @@ function calculateExchange (myDanishAmount, myRate) {
 }
 
 
-
 // viser resultatet  (view code fra MVC)
 function showResult(myEuroResult, myDollarResult, myDanishAmount) {
     const resultElement = document.getElementById('result');
